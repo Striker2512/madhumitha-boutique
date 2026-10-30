@@ -7,6 +7,7 @@
   <meta name="description" content="Discover sarees, kurtis and traditional jewellery at Madhumitha Sabari Kumar Boutique. Enquire and order through WhatsApp.">
   <title>Madhumitha Sabari Kumar Boutique</title>
   <link rel="stylesheet" href="styles.css">
+ <link rel="manifest" href="./manifest.json">
 </head>
 <body>
   <div class="announcement">Traditional style, thoughtfully chosen · Orders welcome on WhatsApp</div>
@@ -112,5 +113,15 @@
   <script src="config.js"></script>
   <script src="products.js"></script>
   <script src="script.js"></script>
+  <script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./service-worker.js")
+      .catch(error => {
+        console.error("PWA registration failed:", error);
+      });
+  });
+}
+</script>
 </body>
 </html>
