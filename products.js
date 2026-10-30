@@ -1,24 +1,10 @@
 
 /*
-  REAL PRODUCT CATALOGUE
+  Madhumitha Sabari Kumar Boutique
+  Real product catalogue
 
-  Add only confirmed boutique inventory.
-  Do not enter guessed names, prices, stock or photos.
-
-  Example structure for a real product:
-
-  {
-    id: "unique-product-id",
-    name: "Exact product name",
-    category: "Sarees",
-    description: "Confirmed product details",
-    price: 0,
-    image: "images/your-real-product-photo.jpg",
-    available: true
-  }
-
-  Use category "Kurtis" for kurtis.
-  Replace every example value with confirmed information.
+  Add only confirmed product details.
+  Categories: Sarees and Kurtis.
 */
 
 window.BOUTIQUE_PRODUCTS = [];
