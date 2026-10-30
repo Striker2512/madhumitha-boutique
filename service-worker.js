@@ -1,5 +1,5 @@
 
-const CACHE_NAME = "msk-boutique-v1";
+const CACHE_NAME = "msk-boutique-v2";
 
 const APP_FILES = [
   "./",
@@ -10,7 +10,8 @@ const APP_FILES = [
   "./script.js",
   "./manifest.json",
   "./offline.html",
-  "./icons/boutique-icon.svg"
+  "./icons/boutique-icon-192.png",
+"./icons/boutique-icon-512.png"
 ];
 
 self.addEventListener("install", event => {
