@@ -10,7 +10,7 @@
   const cartPanel = document.getElementById("cartPanel");
   const backdrop = document.getElementById("cartBackdrop");
   const safe = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-  const categoryClass = c => c === "Kurtis" ? "kurtis" : c === "Traditional jewellery" ? "jewellery" : "";
+  const categoryClass = c => c === "Kurtis" ? "kurtis" : c === "Women's Bottom Wear" ? "bottomwear" : c === "Traditional jewellery" ? "jewellery" : "";
   function renderProducts() {
     const selected = filter.value;
     const list = products.filter(p => selected === "All" || p.category === selected);
